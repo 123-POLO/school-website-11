@@ -1,0 +1,128 @@
+body {
+
+    background-color: rgb(15, 11, 11);
+     margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+}
+
+.ikp{
+width: 100px;
+height: 20px;
+background-color: blue;
+border-radius: 10px;
+justify-content: center;
+align-items: center;
+margin: 100px ;
+transition-duration: 2s;
+transition-property: width,;
+transition-timing-function: ease;
+transition-delay: 0s;
+text-align: center;
+ transform-origin: bottom center;
+ box-shadow: 0 , 100px , rgb(245, 235, 235);
+
+
+}
+.ikp:hover {
+transform: scaleY(5.5) scaleX(1.2)
+
+;
+}
+
+
+.heart {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      transform: rotate(-45deg);
+     animation-name: eop;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-direction: alternate;
+}
+@keyframes eop {
+    from {
+        transform: rotate(295deg);
+    }
+    to {
+             transform: rotate(335deg);
+    }
+}
+    
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+     
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      top: 0;
+      left: 50px;
+    }
+.OKI{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    animation-name: plokiju;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-direction: alternate;
+}
+@keyframes plokiju {
+     
+  0% {
+         transform:rotate(295deg);
+  }
+  100% {
+          transform:rotate(335deg);
+  }
+ 
+}
+.OKI::before,
+.OKI::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+   border-radius: 50%;
+   position: absolute;
+}
+.OKI::before{
+    top: -50px;
+    left: 0;
+}
+.OKI::after{
+    top: 0;
+    left: 50px;
+}
+
+
+
+
+
+
+
+
